@@ -1,6 +1,6 @@
 const http = require("http");
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((req,res) => {
   // res.write('welcome to home page')
   // console.log('qelcome ')
   // res.end()
@@ -10,6 +10,7 @@ const server = http.createServer((req, res) => {
   if (req.url === "/about") {
     res.end("welcome to about page");
   }
+  // shubham
   res.end(`
         <h1> Oops !</h1>
         <p> we cant seem to find the page we are looking for</p>
